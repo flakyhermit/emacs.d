@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: vocab
+# key: <voc
+# --
+
+** ${1:Word}
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Basic
+:ANKI_DECK: English
+:END:
+*** Front
+/$2 *$1*/
+*** Back
+$1 - ${3:Meaning}
+$0

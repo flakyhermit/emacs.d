@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: idiom	     
+# key: <idm
+# --
+* ${1:Word}
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Basic
+:ANKI_DECK: English
+:END:
+** Front
+$1
+** Back
+${2:Meaning}
+$0
+
+

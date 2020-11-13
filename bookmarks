@@ -1,0 +1,80 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Projects"
+ (filename . "~/Dropbox/Projects/")
+ (front-context-string . "mental-health-lo")
+ (rear-context-string . "96 Nov 10 15:24 ")
+ (position . 216))
+("pack"
+ (filename . "~/Dropbox/Notes/org/knowledgebase/20200831214008-vim_navigation.org")
+ (front-context-string . "he marked line.\n")
+ (rear-context-string . "he beginning of ")
+ (position . 2198))
+("straight/repos"
+ (filename . "~/.emacs.d/straight/repos/")
+ (front-context-string . "2048-game\n  drwx")
+ (rear-context-string . "96 Aug 23 19:31 ")
+ (position . 230))
+("books/considering"
+ (filename . "~/Dropbox/Notes/org/lists/books.org")
+ (front-context-string . "onsidering\n** Ro")
+ (rear-context-string . "  0.0\n:END:\n\n* C")
+ (position . 2936))
+("emacs/package-list"
+ (filename . "~/.emacs.d/package-list.el")
+ (front-context-string . "		     svg-mode-")
+ (rear-context-string . "r\n		     swiper\n")
+ (position . 1102))
+("snippets"
+ (filename . "~/.emacs.d/snippets/")
+ (front-context-string . "markdown-mode\n  ")
+ (rear-context-string . "96 Jun 25 21:08 ")
+ (position . 217))
+("backup.sh"
+ (filename . "~/.scripts/backup.sh")
+ (front-context-string . "X/Projects file:")
+ (rear-context-string . "cts\n$dup $DROPBO")
+ (position . 718))
+("polybar/config"
+ (filename . "~/.config/polybar/config")
+ (front-context-string . "================")
+ (rear-context-string)
+ (position . 1))
+("i3/config"
+ (filename . "~/.config/i3/config")
+ (front-context-string . "\n# start dmenu (")
+ (rear-context-string . "od+Shift+q kill\n")
+ (position . 1329))
+("references.bib"
+ (filename . "~/Dropbox/Notes/org/bibliography/references.bib")
+ (front-context-string . "\n@article{weir-a")
+ (rear-context-string)
+ (position . 1))
+("org-capture-last-stored-marker"
+ (filename . "~/Dropbox/Notes/org/emacs.org")
+ (front-context-string . "** org-match-spa")
+ (rear-context-string . "Bookmarks bmenu\n")
+ (position . 5085))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/Notes/org/emacs.org")
+ (front-context-string . "** DONE Moving f")
+ (rear-context-string . "Sun 12:34]\nWow!\n")
+ (position . 17037))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/Notes/org/vocabulary.org")
+ (front-context-string . "** sappy\n:PROPER")
+ (rear-context-string . ",\"\n* 2020-11-13\n")
+ (position . 4770))
+("emacs/init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "set-face-attribu")
+ (rear-context-string . "\" :height 115)\n(")
+ (position . 1164))
+("emacs.org"
+ (filename . "~/Dropbox/Notes/org/emacs.org")
+ (front-context-string . "n\n** Learn about")
+ (rear-context-string . "ksmarks extentio")
+ (position . 282))
+)

@@ -1,0 +1,9 @@
+# key: <book
+# name: book
+# --
+${1:Title} - ${2:Author}
+:PROPERTIES:
+:ADDED: `(let ((x (org-insert-time-stamp nil t t ))))`
+:AUTHOR: $2
+:END:
+$0
