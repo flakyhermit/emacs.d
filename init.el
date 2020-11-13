@@ -384,6 +384,9 @@
 	("b" "Add a BLOG post IDEA" entry
 	(file ,(concat org-directory "/blog-post-ideas.org")) 
 	"* %?\n")
+	("p" "A project IDEA" entry
+	(file ,(concat org-directory "/project-ideas.org")) 
+	"* %?\n")
 	("B" "Add a BOOK to the 'considering' list" entry
 	(file+olp ,(concat org-directory "/lists/books.org") "Considering")
 	"* <book%?\n")
