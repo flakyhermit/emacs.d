@@ -107,7 +107,7 @@
   (if (eq window-state 'maximized)
       (window-minimize)
     (window-maximize)))
-(global-set-key (kbd "C-x ^") #'window-state-toggle)
+(global-set-key (kbd "C-x +") #'window-state-toggle)
 ;; Window geometry modes ----
 (defun set-frame-geometry (width height)
   (set-frame-width (nth 0 (frame-list)) width)
