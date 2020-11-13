@@ -225,7 +225,7 @@
 (define-key global-map (kbd "<f9>") 'crux-visit-term-buffer)
 (define-key global-map (kbd "<f9>") 'crux-visit-term-buffer)
 
-(defvar completion-frontend 'ido) ;; ivy, helm, ido
+(defvar completion-frontend 'ivy) ;; ivy, helm, ido
 
 (when (eq completion-frontend 'ido)
   ;; ido ----------------------------
