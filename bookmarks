@@ -7,11 +7,6 @@
  (front-context-string . "mental-health-lo")
  (rear-context-string . "96 Nov 10 15:24 ")
  (position . 216))
-("pack"
- (filename . "~/Dropbox/Notes/org/knowledgebase/20200831214008-vim_navigation.org")
- (front-context-string . "he marked line.\n")
- (rear-context-string . "he beginning of ")
- (position . 2198))
 ("straight/repos"
  (filename . "~/.emacs.d/straight/repos/")
  (front-context-string . "2048-game\n  drwx")
