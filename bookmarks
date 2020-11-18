@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("rofi/config"
+(("blog.jeweljames.com"
+ (filename . "~/Dropbox/Projects/web-blog-jeweljames/content/posts/")
+ (front-context-string . "covid-19-here-to")
+ (rear-context-string . "57 Aug  5 16:36 ")
+ (position . 247))
+("rofi/config"
  (filename . "~/.config/rofi/config")
  (front-context-string . "rofi.drun-displa")
  (rear-context-string . "\nrofi.lines: 10\n")
