@@ -68,10 +68,10 @@
  (rear-context-string . "Sun 12:34]\nWow!\n")
  (position . 17037))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/knowledgebase/20201115212513-inflation.org")
- (front-context-string . "#+title: Inflati")
- (rear-context-string)
- (position . 1))
+ (filename . "~/Dropbox/Notes/org/lists/read-later.org")
+ (front-context-string . "- [ ] https://st")
+ (rear-context-string . "20-11-23 Monday\n")
+ (position . 2888))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")

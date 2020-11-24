@@ -91,7 +91,7 @@
 ;; Buffer switching
 (global-set-key (kbd "C-x b") #'switch-to-next-buffer)
 (global-set-key (kbd "C-x B") #'switch-to-prev-buffer)
-(global-set-key (kbd "C-x C-b") #'switch-to-buffer)
+(global-set-key (kbd "C-x C-b") #'helm-mini)
 
 ;; Custom functions
 ;; Window management
@@ -251,8 +251,9 @@
   ;; (define-key ivy-mode-map (kbd "C-k") 'ivy-previous-line)
   (add-hook 'ivy-mode-hook #'ivy-rich-mode)
   (ivy-mode 1)
+
   ;; counsel ------------------------
-  (define-key ctl-x-map (kbd "C-b") 'persp-switch-to-buffer)
+  (define-key ctl-x-map (kbd "C-b") 'counsel-switch-buffer)
   (define-key ctl-x-map (kbd "C-f") 'counsel-find-file)
   (define-key ctl-x-map (kbd "C-r") 'counsel-recentf)
   (define-key mode-specific-map (kbd "C-f") 'counsel-find-file)
