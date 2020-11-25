@@ -36,7 +36,7 @@
 (require 'mental-health-log)
 
 ;; Load the theme
-(load-theme 'doom-sourcerer t)
+(load-theme 'doom-spacegrey t)
 (doom-themes-org-config)
 
 ;; Setup alternate directory for backups
@@ -75,7 +75,7 @@
 			     (global-company-mode +1)))
 
 ;; Set custom face settings
-(add-to-list 'default-frame-alist '(font . "Iosevka-12"))
+(add-to-list 'default-frame-alist '(font . "Iosevka-11.5"))
 (set-face-attribute 'variable-pitch nil :font "Iosevka-12")
 (set-face-attribute 'fixed-pitch nil :inherit 'default)
 

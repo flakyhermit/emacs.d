@@ -63,10 +63,10 @@
  (rear-context-string . "Bookmarks bmenu\n")
  (position . 5085))
 ("org-refile-last-stored"
- (filename . "~/Dropbox/Notes/org/emacs.org")
- (front-context-string . "** DONE Moving f")
- (rear-context-string . "Sun 12:34]\nWow!\n")
- (position . 17037))
+ (filename . "~/Dropbox/Notes/org/lists/books.org")
+ (front-context-string . "*** The Structur")
+ (rear-context-string . "Safrahoer\n:END:\n")
+ (position . 3375))
 ("org-capture-last-stored"
  (filename . "~/Dropbox/Notes/org/lists/read-later.org")
  (front-context-string . "- [ ] https://st")
