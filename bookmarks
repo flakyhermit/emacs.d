@@ -68,10 +68,10 @@
  (rear-context-string . "Safrahoer\n:END:\n")
  (position . 3375))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/lists/read-later.org")
- (front-context-string . "- [ ] https://st")
- (rear-context-string . "20-11-23 Monday\n")
- (position . 2888))
+ (filename . "~/Dropbox/Notes/org/todo.org")
+ (front-context-string . "* TODO Ask the V")
+ (rear-context-string . " laop keboardst\n")
+ (position . 9734))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
