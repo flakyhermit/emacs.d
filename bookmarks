@@ -68,10 +68,10 @@
  (rear-context-string . "Safrahoer\n:END:\n")
  (position . 3375))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/inbox.org")
- (front-context-string . "* TODO Word mean")
- (rear-context-string . "ording it.\nYay!\n")
- (position . 14227))
+ (filename . "~/Dropbox/Notes/org/todo.org")
+ (front-context-string . "* TODO Aunty doc")
+ (rear-context-string . "d boxing gloves\n")
+ (position . 10383))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
