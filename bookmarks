@@ -68,10 +68,10 @@
  (rear-context-string . "Safrahoer\n:END:\n")
  (position . 3375))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/lists/read-later.org")
- (front-context-string . "- [ ] http://www")
- (rear-context-string . "12-02 Wednesday\n")
- (position . 2998))
+ (filename . "~/Dropbox/Notes/org/vocabulary.org")
+ (front-context-string . "** sordid\n:PROPE")
+ (rear-context-string . "\n\n\n* 2020-12-02\n")
+ (position . 4924))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
