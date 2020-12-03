@@ -36,7 +36,7 @@
 (require 'mental-health-log)
 
 ;; Load the theme
-(load-theme 'doom-spacegrey t)
+(load-theme 'wombat t)
 (doom-themes-org-config)
 
 ;; Setup alternate directory for backups
@@ -76,7 +76,7 @@
 
 ;; Set custom face settings
 (add-to-list 'default-frame-alist '(font . "Iosevka-11.5"))
-(set-face-attribute 'variable-pitch nil :font "Iosevka-12")
+(set-face-attribute 'variable-pitch nil :font "Iosevka-12" :weight 'medium)
 (set-face-attribute 'fixed-pitch nil :inherit 'default)
 
 ;; Global keybindings
@@ -245,7 +245,7 @@
 
 (when (eq completion-frontend 'ivy)
   ;; ivy ----------------------------
-  (setq ivy-height 13
+  (setq ivy-height 16
 	ivy-wrap t)
   ;; (define-key ivy-mode-map (kbd "C-j") 'ivy-next-line) 
   ;; (define-key ivy-mode-map (kbd "C-k") 'ivy-previous-line)

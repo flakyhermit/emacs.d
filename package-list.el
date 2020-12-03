@@ -109,6 +109,7 @@
 		     vterm
 		     company-web
 		     vue-mode
+		     ;; flyspell-correct-ivy
 		     ;; Custom recipes
 ))
 
