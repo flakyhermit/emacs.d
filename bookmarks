@@ -64,9 +64,9 @@
  (position . 5085))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/Notes/org/todo.org")
- (front-context-string . "** TODO Find abo")
- (rear-context-string . " of sacrifice e\n")
- (position . 2617))
+ (front-context-string . "** Learn sed?\n* ")
+ (rear-context-string . "* Waiting List\n\n")
+ (position . 2584))
 ("org-capture-last-stored"
  (filename . "~/Dropbox/Notes/org/blog-post-ideas.org")
  (front-context-string . "* TODO Setting u")
