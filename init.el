@@ -270,6 +270,9 @@
   (helm-mode 1))
 (global-set-key (kbd "C-h i") #'helm-info)
 
+;; flyspell -----------------------
+(define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
+
 ;; amx ----------------------------
 (setq amx-backend 'auto)
 (amx-mode 1)
@@ -279,7 +282,7 @@
 (show-paren-mode +1)
 
 ;; avy ----------------------------
-(define-key global-map (kbd "C-;") 'avy-goto-word-or-subword-1)
+(define-key global-map (kbd "C-:") 'avy-goto-word-or-subword-1)
 (define-key global-map (kbd "C-:") 'avy-goto-char)
 ;; (avy-setup-default)
 
@@ -292,6 +295,21 @@
   (add-hook 'dired-mode-hook #'dired-hide-details-mode)
   (add-hook 'dired-mode-hook #'dired-hide-dotfiles-mode)
   (define-key dired-mode-map "-" 'dired-up-directory))
+
+;; web-mode -----------------------
+(add-hook 'web-mode-hook #'prettier-js-mode)
+(add-hook 'vue-mode-hook #'emmet-preview-mode)
+(add-hook 'vue-mode-hook #'emmet-mode)
+(add-hook 'mmm-mode-hook (lambda ()
+			   ((set-face-background 'mmm-default-submode-face nil))))
+
+(defun web-dev-mode ()
+  "All the tools for web-development"
+  (interactive)
+  (prettier-js-mode)
+  (emmet-mode)
+  (web-mode)
+  (define-key web-mode-map (kbd "C-x w p") #'prettier-js))
 
 ;; projectile ---------------------
 (setq projectile-completion-system completion-frontend

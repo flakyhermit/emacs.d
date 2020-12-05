@@ -63,15 +63,15 @@
  (rear-context-string . "Bookmarks bmenu\n")
  (position . 5085))
 ("org-refile-last-stored"
- (filename . "~/Dropbox/Notes/org/lists/books.org")
- (front-context-string . "*** The Structur")
- (rear-context-string . "Safrahoer\n:END:\n")
- (position . 3375))
+ (filename . "~/Dropbox/Notes/org/todo.org")
+ (front-context-string . "** TODO Find abo")
+ (rear-context-string . " of sacrifice e\n")
+ (position . 2617))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/project-ideas.org")
- (front-context-string . "* A cross-browse")
- (rear-context-string)
- (position . 1))
+ (filename . "~/Dropbox/Notes/org/blog-post-ideas.org")
+ (front-context-string . "* TODO Setting u")
+ (rear-context-string . "earnt this week\n")
+ (position . 3217))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
