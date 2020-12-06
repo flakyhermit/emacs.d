@@ -421,10 +421,11 @@
 	(file+headline ,(concat org-directory "/emacs.org") "To-do")
 	"* TODO %? \n\n")))
 (define-key mode-specific-map (kbd "a") 'org-agenda)
-(define-key mode-specific-map (kbd "c") 'org-capture)
-;; (define-key mode-specific-map (kbd "c") 'counsel-org-capture)
+;; (define-key mode-specific-map (kbd "c") 'org-capture)
+(define-key mode-specific-map (kbd "c") 'counsel-org-capture)
 (with-eval-after-load 'org
   (define-key org-mode-map (kbd "C-c C-q") 'counsel-org-tag)
+  (define-key mode-specific-map (kbd "C-v <tab>") (lambda () (interactive)(org-set-startup-visibility)))
   (add-hook 'org-mode-hook 'org-indent-mode)
   (add-hook 'org-mode-hook 'yas-minor-mode)
   ;; (add-hook 'org-mode-hook 'org-superstar-mode)
