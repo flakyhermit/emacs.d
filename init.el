@@ -383,17 +383,16 @@
       org-agenda-files '("~/Dropbox/Notes/org")
       org-refile-targets '((org-inbox-file :maxlevel . 2)
 			   ("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
-			   ("~/Dropbox/Notes/org/todo.org" :maxlevel . 2)
-			   ("~/Dropbox/Notes/org/lists/books.org" :maxlevel . 3))
+			   ("~/Dropbox/Notes/org/gtd.org" :maxlevel . 2))
       org-archive-location (concat org-directory "/archive/%s_archive::")
       org-startup-with-inline-images t
-    ;; org-indent-indentation-per-level 1
+      org-indent-indentation-per-level 1
     ;; org-adapt-indentation nil
       org-hide-emphasis-markers t
       org-capture-templates
-      `(("t" "Add a TODO" entry
-	(file ,(concat org-directory "/todo.org")) 
-	"* TODO %?\n")
+      `(("t" "Add a random capture" entry
+	(file+olp ,(concat org-directory "/gtd.org") "Inbox") 
+	"* %?\n")
 	("T" "Just a THOUGHT" entry
 	(file ,(concat org-directory "/inbox.org"))
 	"* %?\n")
