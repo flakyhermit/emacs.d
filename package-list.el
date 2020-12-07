@@ -114,6 +114,7 @@
 		     prettier-js
 		     mmm-mode
 		     emmet-mode
+		     shell-pop
 		     ;; Custom recipes
 ))
 

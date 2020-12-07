@@ -80,7 +80,7 @@
 (set-face-attribute 'fixed-pitch nil :inherit 'default)
 
 ;; Global keybindings
-(global-set-key (kbd "C-x C-t") 'eshell)
+(global-set-key (kbd "C-x C-t") 'shell-pop)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "C-(") 'evil-prev-buffer)
 (global-set-key (kbd "C-)") 'evil-next-buffer)
@@ -378,7 +378,7 @@
 ;; org ----------------------------
 (setq org-directory "~/Dropbox/Notes/org"
       org-return-follows-link t
-      org-todo-keywords '((sequence "TODO(t)" "ACTV(a!)" "REFL(r)" "|" "HOLD(h)" "DONE(d)"))
+      org-todo-keywords '((sequence "TODO(t)" "ACTV(a!)" "REFL(r)" "|" "HOLD(h)" "CANC(c)" "DONE(d)"))
       org-inbox-file "~/Dropbox/Notes/org/inbox.org"
       org-agenda-files '("~/Dropbox/Notes/org")
       org-refile-targets '(("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
@@ -422,6 +422,7 @@
 (define-key mode-specific-map (kbd "a") 'org-agenda)
 ;; (define-key mode-specific-map (kbd "c") 'org-capture)
 (define-key mode-specific-map (kbd "c") 'counsel-org-capture)
+(define-key mode-specific-map (kbd "o") 'counsel-org-goto)
 (with-eval-after-load 'org
   (define-key org-mode-map (kbd "C-c C-q") 'counsel-org-tag)
   (define-key mode-specific-map (kbd "C-v <tab>") (lambda () (interactive)(org-set-startup-visibility)))
