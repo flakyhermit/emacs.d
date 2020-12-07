@@ -1,4 +1,4 @@
-; Emacs init file
+;; Emacs init file
 ;; Jewel James
 
 ;; DO NOT EDIT THIS BLOCK ---------------------------
@@ -36,7 +36,7 @@
 (require 'mental-health-log)
 
 ;; Load the theme
-(load-theme 'wombat t)
+(load-theme 'doom-monokai-spectrum t)
 (doom-themes-org-config)
 
 ;; Setup alternate directory for backups
@@ -381,8 +381,7 @@
       org-todo-keywords '((sequence "TODO(t)" "ACTV(a!)" "REFL(r)" "|" "HOLD(h)" "DONE(d)"))
       org-inbox-file "~/Dropbox/Notes/org/inbox.org"
       org-agenda-files '("~/Dropbox/Notes/org")
-      org-refile-targets '((org-inbox-file :maxlevel . 2)
-			   ("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
+      org-refile-targets '(("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
 			   ("~/Dropbox/Notes/org/gtd.org" :maxlevel . 2))
       org-archive-location (concat org-directory "/archive/%s_archive::")
       org-startup-with-inline-images t
@@ -390,7 +389,7 @@
     ;; org-adapt-indentation nil
       org-hide-emphasis-markers t
       org-capture-templates
-      `(("t" "Add a random capture" entry
+      `(("t" "Add a random capture to GTD" entry
 	(file+olp ,(concat org-directory "/gtd.org") "Inbox") 
 	"* %?\n")
 	("T" "Just a THOUGHT" entry
@@ -526,8 +525,35 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
-   '("~/Dropbox/Notes/org/lists/books.org" "/home/monk/Dropbox/Notes/org/watch.org" "/home/monk/Dropbox/Notes/org/archlinux.org" "/home/monk/Dropbox/Notes/org/blog-post-ideas.org" "/home/monk/Dropbox/Notes/org/contacts.org" "/home/monk/Dropbox/Notes/org/cv.org" "/home/monk/Dropbox/Notes/org/devices.org" "/home/monk/Dropbox/Notes/org/emacs-article.org" "/home/monk/Dropbox/Notes/org/emacs.org" "/home/monk/Dropbox/Notes/org/events.org" "/home/monk/Dropbox/Notes/org/finances.org" "/home/monk/Dropbox/Notes/org/higher-studies.org" "/home/monk/Dropbox/Notes/org/hindi.org" "/home/monk/Dropbox/Notes/org/idioms.org" "/home/monk/Dropbox/Notes/org/inbox.org" "/home/monk/Dropbox/Notes/org/key-issues.org" "/home/monk/Dropbox/Notes/org/kindle-support.org" "/home/monk/Dropbox/Notes/org/listen.org" "/home/monk/Dropbox/Notes/org/long-term-goals.org" "/home/monk/Dropbox/Notes/org/minecraft.org" "/home/monk/Dropbox/Notes/org/observations.org" "/home/monk/Dropbox/Notes/org/podcasts.org" "/home/monk/Dropbox/Notes/org/purchases.org" "/home/monk/Dropbox/Notes/org/quotes.org" "/home/monk/Dropbox/Notes/org/self-improvement.org" "/home/monk/Dropbox/Notes/org/thoughts.org" "/home/monk/Dropbox/Notes/org/todo.org" "/home/monk/Dropbox/Notes/org/typing-test.org" "/home/monk/Dropbox/Notes/org/vocabulary.org"))
- '(safe-local-variable-values '((org-log-into-drawer . t) (org-log-done . time))))
+   '("~/Dropbox/Notes/org/gtd.org" "~/Dropbox/Notes/org/lists/books.org" "/home/monk/Dropbox/Notes/org/watch.org" "/home/monk/Dropbox/Notes/org/archlinux.org" "/home/monk/Dropbox/Notes/org/blog-post-ideas.org" "/home/monk/Dropbox/Notes/org/contacts.org" "/home/monk/Dropbox/Notes/org/cv.org" "/home/monk/Dropbox/Notes/org/devices.org" "/home/monk/Dropbox/Notes/org/emacs-article.org" "/home/monk/Dropbox/Notes/org/emacs.org" "/home/monk/Dropbox/Notes/org/events.org" "/home/monk/Dropbox/Notes/org/finances.org" "/home/monk/Dropbox/Notes/org/higher-studies.org" "/home/monk/Dropbox/Notes/org/hindi.org" "/home/monk/Dropbox/Notes/org/idioms.org" "/home/monk/Dropbox/Notes/org/key-issues.org" "/home/monk/Dropbox/Notes/org/kindle-support.org" "/home/monk/Dropbox/Notes/org/listen.org" "/home/monk/Dropbox/Notes/org/long-term-goals.org" "/home/monk/Dropbox/Notes/org/minecraft.org" "/home/monk/Dropbox/Notes/org/observations.org" "/home/monk/Dropbox/Notes/org/podcasts.org" "/home/monk/Dropbox/Notes/org/purchases.org" "/home/monk/Dropbox/Notes/org/quotes.org" "/home/monk/Dropbox/Notes/org/self-improvement.org" "/home/monk/Dropbox/Notes/org/thoughts.org" "/home/monk/Dropbox/Notes/org/typing-test.org" "/home/monk/Dropbox/Notes/org/vocabulary.org"))
+ '(safe-local-variable-values
+   '((org-refile-targets
+      (buffer-file-name :maxlevel . 2))
+     (org-refile-targets
+      ("~/Dropbox/Notes/org/gtd.org" :level . 1))
+     (org-refile-targets
+      ("~/Dropbox/Notes/org/gtd.org" :maxlevel . 1))
+     (org-refile-targets
+      ("~/Dropbox/Notes/org/gtd.org"))
+     (org-refile-targets
+      ("./gtd.org"))
+     (org-refile-targets
+      ("gtd.org"))
+     (org-refile-targets "gtd.org")
+     (org-refile-targets . "gtd.org")
+     (org-refile-targets quote
+			 ("./gtd.org"))
+     (org-refile-targets "./gtd.org")
+     (org-refile-targets quote
+			 (("./gtd.org")))
+     (org-refile-targets quote
+			 ((\,
+			   (concat org-directory "/gtd.org"))))
+     (org-refile-targets quote
+			 ((concat org-directory "/gtd.org")))
+     (org-refile-targets)
+     (org-log-into-drawer . t)
+     (org-log-done . time))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

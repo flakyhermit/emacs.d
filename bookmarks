@@ -63,15 +63,15 @@
  (rear-context-string . "Bookmarks bmenu\n")
  (position . 5085))
 ("org-refile-last-stored"
- (filename . "~/Dropbox/Notes/org/todo.org")
- (front-context-string . "** Learn sed?\n* ")
- (rear-context-string . "* Waiting List\n\n")
- (position . 2584))
+ (filename . "~/Dropbox/Notes/org/gtd.org")
+ (front-context-string . "** TODO Send pur")
+ (rear-context-string . "d rare insights\n")
+ (position . 638))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/blog-post-ideas.org")
- (front-context-string . "* TODO Setting u")
- (rear-context-string . "earnt this week\n")
- (position . 3217))
+ (filename . "~/Dropbox/Notes/org/gtd.org")
+ (front-context-string . "** Ask on Reddit")
+ (rear-context-string . "Clippings.txt'?\n")
+ (position . 199))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
