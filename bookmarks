@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("blog.jeweljames.com"
+(("6 PMs"
+ (filename . "~/Dropbox/Notes/6_PMs/")
+ (front-context-string . "2020-11-25\n  -rw")
+ (rear-context-string . "95 Nov 26 18:37 ")
+ (position . 220))
+("blog.jeweljames.com"
  (filename . "~/Dropbox/Projects/web-blog-jeweljames/content/posts/")
  (front-context-string . "covid-19-here-to")
  (rear-context-string . "57 Aug  5 16:36 ")
@@ -64,14 +69,14 @@
  (position . 5085))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/Notes/org/gtd.org")
- (front-context-string . "** TODO Send pur")
- (rear-context-string . "d rare insights\n")
- (position . 638))
+ (front-context-string . "** Creating file")
+ (rear-context-string . "for 6 PM folder\n")
+ (position . 526))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/gtd.org")
- (front-context-string . "** Ask on Reddit")
- (rear-context-string . "Clippings.txt'?\n")
- (position . 199))
+ (filename . "~/Dropbox/Notes/org/emacs.org")
+ (front-context-string . "** TODO =auto-mo")
+ (rear-context-string . " archive target\n")
+ (position . 4414))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")

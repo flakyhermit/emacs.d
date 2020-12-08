@@ -46,7 +46,7 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message (concat ";; \n;; Emacs loaded in " (emacs-init-time) "\n;; -----------------------------------\n;; Howdy Jewel! Welcome to Emacs.\n;; Today is " (format-time-string "%d %B, %A")  "\n"))
 
-;; (setq initial-major-mode 'fundamental-mode)
+(setq initial-major-mode 'fundamental-mode)
 
 ;; Set default frame size
 (add-to-list 'default-frame-alist '(height . 36))
@@ -81,6 +81,7 @@
 
 ;; Global keybindings
 (global-set-key (kbd "C-x C-t") 'shell-pop)
+(global-set-key (kbd "<f9>") 'shell-pop)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "C-(") 'evil-prev-buffer)
 (global-set-key (kbd "C-)") 'evil-next-buffer)
@@ -222,8 +223,6 @@
 
 ;; crux ---------------------------
 (define-key ctl-x-map (kbd "C-_") 'crux-delete-file-and-buffer)
-(define-key global-map (kbd "<f9>") 'crux-visit-term-buffer)
-(define-key global-map (kbd "<f9>") 'crux-visit-term-buffer)
 
 (defvar completion-frontend 'ivy) ;; ivy, helm, ido
 
@@ -329,6 +328,8 @@
 (setq persp-nil-name "-")
 ;; (persp-mode 0)
 
+;; shell-pop ----------------------
+(setq shell-pop-term-shell "/bin/zsh/")
 ;; magit --------------------------
 (define-key ctl-x-map (kbd "g") 'magit-status)
 
