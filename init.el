@@ -341,6 +341,9 @@
 ;; pdf-tools ----------------------
 (pdf-tools-install)
 
+;; csv-mode -----------------------
+(add-hook 'csv-mode-hook #'csv-align-mode)
+
 ;; markdown-mode ------------------
 (setq wc-modeline-format "%tw")
 (with-eval-after-load 'markdown-mode
