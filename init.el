@@ -252,7 +252,7 @@
   (ivy-mode 1)
 
   ;; counsel ------------------------
-  (define-key ctl-x-map (kbd "C-b") 'counsel-switch-buffer)
+  ;; (define-key ctl-x-map (kbd "C-b") 'counsel-switch-buffer)
   (define-key ctl-x-map (kbd "C-f") 'counsel-find-file)
   (define-key ctl-x-map (kbd "C-r") 'counsel-recentf)
   (define-key mode-specific-map (kbd "C-f") 'counsel-find-file)
@@ -268,6 +268,8 @@
   (define-key ctl-x-map (kbd "C-r") 'helm-recentf)
   (helm-mode 1))
 (global-set-key (kbd "C-h i") #'helm-info)
+(with-eval-after-load 'helm-bookmarks
+  (add-to-list 'helm-mini-default-sources helm-source-bookmarks))
 
 ;; flyspell -----------------------
 (define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
@@ -379,14 +381,20 @@
 (defun xs/isodate-file-name(filename)
   (concat filename "-" (format-time-string "%Y-%m-%d") ".org"))
 
+;; easy-hugo
+(straight-use-package 'easy-hugo)
+(setq easy-hugo-basedir "~/Dropbox/Projects/web-blog-jeweljames/")
+
 ;; org ----------------------------
+(setq org-global-refile-targets '(("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
+			   ("~/Dropbox/Notes/org/gtd.org" :maxlevel . 2)))
+
 (setq org-directory "~/Dropbox/Notes/org"
       org-return-follows-link t
       org-todo-keywords '((sequence "TODO(t)" "ACTV(a!)" "REFL(r)" "|" "HOLD(h)" "CANC(c)" "DONE(d)"))
       org-inbox-file "~/Dropbox/Notes/org/inbox.org"
       org-agenda-files '("~/Dropbox/Notes/org")
-      org-refile-targets '(("~/Dropbox/Notes/org/emacs.org" :maxlevel . 1)
-			   ("~/Dropbox/Notes/org/gtd.org" :maxlevel . 2))
+      org-refile-targets org-global-refile-targets
       org-archive-location (concat org-directory "/archive/%s_archive::")
       org-startup-with-inline-images t
       org-indent-indentation-per-level 1
@@ -427,6 +435,12 @@
 ;; (define-key mode-specific-map (kbd "c") 'org-capture)
 (define-key mode-specific-map (kbd "c") 'counsel-org-capture)
 (define-key mode-specific-map (kbd "o") 'counsel-org-goto)
+(defun org-refile-global ()
+  "Refile to the global refile target list"
+  (interactive)
+  (let ((org-refile-targets org-global-refile-targets))
+    (org-refile)))
+(global-set-key (kbd "C-c 0 C-w") #'org-refile-global)
 (with-eval-after-load 'org
   (define-key org-mode-map (kbd "C-c C-q") 'counsel-org-tag)
   (define-key mode-specific-map (kbd "C-v <tab>") (lambda () (interactive)(org-set-startup-visibility)))
