@@ -79,14 +79,14 @@
  (position . 3378))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/Notes/org/gtd.org")
- (front-context-string . "** TODO Institut")
- (rear-context-string . "c theory Course\n")
- (position . 3378))
+ (front-context-string . "** TODO Pay for ")
+ (rear-context-string . " children\n:END:\n")
+ (position . 552))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/gtd.org")
- (front-context-string . "** TODO Institut")
- (rear-context-string . "ctdi@gmail.com \n")
- (position . 496))
+ (filename . "~/Dropbox/Notes/org/inbox.org")
+ (front-context-string . "* research requi")
+ (rear-context-string)
+ (position . 1))
 ("emacs/init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "set-face-attribu")
