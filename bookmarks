@@ -83,8 +83,8 @@
  (rear-context-string . " children\n:END:\n")
  (position . 552))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/inbox.org")
- (front-context-string . "* research requi")
+ (filename . "~/Dropbox/Notes/org/knowledgebase/20201212220011-milton_freidman.org")
+ (front-context-string . "#+title: Milton ")
  (rear-context-string)
  (position . 1))
 ("emacs/init.el"
