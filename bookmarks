@@ -79,12 +79,12 @@
  (position . 3378))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/Notes/org/gtd.org")
- (front-context-string . "** TODO Pay for ")
- (rear-context-string . " children\n:END:\n")
- (position . 552))
+ (front-context-string . "** TODO Make a c")
+ (rear-context-string . "DO Pay for GCPP\n")
+ (position . 651))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/Notes/org/knowledgebase/20201212220011-milton_freidman.org")
- (front-context-string . "#+title: Milton ")
+ (filename . "~/Dropbox/Notes/org/knowledgebase/20201213062125-genuine_progress_indicator_gpi.org")
+ (front-context-string . "#+title: Genuine")
  (rear-context-string)
  (position . 1))
 ("emacs/init.el"
